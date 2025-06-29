@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;   
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.slogan{
+    display: none;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-links a:hover{
+    text-decoration: none;
+    color: rgb(160, 151, 151);
+}
+.menu-toggle{
+    display: none;
+}
+
+.side-navbar{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+.contents{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.contents button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 50px;
+    background-color: aqua;
+}
+.contents button:hover{
+    background-color: black;
+    color: white;
+}
+.contents img{
+    display: block;
+}
+.service{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.container-1{
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.container-2{
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.container-3{
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.info{
+    align-content: center;
+}
+.info h3{
+    text-align: center;
+}
+.info p{
+    text-align: center;
+}
+.container-4{
+    background-color: aqua;
+    padding: 50px;
+}
+/*media query it is command line*/
+
+@media screen and (max-width:600px) {
+    .menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .slogan{
+        display: block;
+    }
+    .contents img{
+        display: none;
+    }
+    .service{
+        display: block;
+        column-gap: 20px;
+    }
+}
